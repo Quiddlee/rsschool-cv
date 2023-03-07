@@ -32,5 +32,5 @@ Sept. 2022 - present
 + [HTML/Css Technologies](https://www.udemy.com/certificate/UC-df2abf76-de53-43b0-a630-46e8b1402a7b/)  
 + [The EF Standard English Test (EF SET)](https://www.efset.org/cert/2JhWMH)
 
-# **Languages**
+# **Languages** 
 **English** - B2 (Upper Intermediate)
