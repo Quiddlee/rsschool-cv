@@ -2,7 +2,7 @@
 
 # **Contact:**
 + **E-mail** **-** bogdanscherbinadev@gmail.com
-+ **Telegram** **-** [t.me/quiddle](https://t.me/Quiddle)
++ **Telegram** **-** [t.me/quiddle](https://t.me/quiddle)
 + **Tel.** **-** +38 (099)-674-4615
 
 # **About**
