@@ -7,13 +7,13 @@
 }
 
 :root {
-  --color-primary: #f0cb59;
+  --color-primary: #ffcc01;
   --color-secondary: #f8f8ff;
   --color-tertiary: #fff;
 
   --color-grey-dark: #363636;
   --color-grey-light: #444445;
-  --color-grey-lightest: #7d7d7f;
+  --color-grey-lightest: #707070;
 
 }
 
@@ -56,6 +56,10 @@ html {
   margin: 0 auto;
 }
 
+.section-wrapper {
+  padding: 15rem 0 0 10rem;
+}
+
 .main {
   background-color: var(--color-secondary);
 }
@@ -65,8 +69,6 @@ html {
 }
 
 .header {
-  padding: 15rem 10rem;
-
   & .header__heading,
   & .header__surname {
     font-size: 5.5rem;
@@ -78,5 +80,41 @@ html {
     letter-spacing: .7rem;
     font-size: 3.5rem;
     font-weight: 400;
+  }
+}
+
+.contact {
+  padding-top: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+  & .contact__icons {
+    padding: .5rem 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    border: .35rem solid var(--color-primary);
+    border-radius: 10rem;
+
+    min-width: 3.7rem;
+    min-height: 11.5rem;
+  }
+
+  & .contact__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  & .contact__resources {
+    display: grid;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  & .contact__resource {
+    text-decoration: none;
+    color: var(--color-grey-lightest);
   }
 }
