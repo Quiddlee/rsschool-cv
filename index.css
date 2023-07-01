@@ -57,7 +57,7 @@ html {
 }
 
 .section-wrapper {
-  padding: 15rem 0 0 10rem;
+  padding: 15rem 15rem 0 10rem;
 }
 
 .main {
@@ -116,5 +116,16 @@ html {
   .contact__resource {
     text-decoration: none;
     color: var(--color-grey-lightest);
+  }
+}
+
+.profile {
+  margin-top: 7rem;
+
+  .profile__title {
+  }
+
+  .profile__content {
+    margin-top: 1rem;
   }
 }
