@@ -165,3 +165,18 @@ html {
     }
   }
 }
+
+.certificates {
+  .certificates__title {
+  }
+
+  .certificates__resources {
+    display: grid;
+    gap: .5rem;
+
+    .certificates__resource {
+      text-decoration: none;
+      color: var(--color-grey-light);
+    }
+  }
+}
