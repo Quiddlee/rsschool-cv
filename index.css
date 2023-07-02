@@ -78,6 +78,22 @@ html {
   background-color: var(--color-tertiary);
 }
 
+.list {
+  display: grid;
+  gap: 2rem;
+
+  .list__item {
+    font-weight: 700;
+    list-style: none;
+
+    &:before {
+      content: '▪';
+      color: var(--color-primary);
+      margin-right: 2rem;
+    }
+  }
+}
+
 .header {
   .header__heading,
   .header__surname {
@@ -283,7 +299,6 @@ html {
     }
 
     .education__university__name {
-
     }
   }
 }
