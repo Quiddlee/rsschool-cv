@@ -44,7 +44,7 @@ html {
   font-family: Google Sans, sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.4;
   color: var(--color-grey-dark);
   background-image: linear-gradient(to right, var(--color-secondary), var(--color-tertiary));
 }
@@ -267,5 +267,23 @@ html {
 
   .image__photo {
     width: 70%;
+  }
+}
+
+.education {
+  margin-top: 12rem;
+
+  .education__university {
+    .education__university__year {
+      color: var(--color-grey-lightest)
+    }
+
+    .education__university__degree-major {
+      font-weight: 300;
+    }
+
+    .education__university__name {
+
+    }
   }
 }
