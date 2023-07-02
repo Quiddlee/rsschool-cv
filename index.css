@@ -32,6 +32,14 @@ html {
   /*}*/
 }
 
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
 .title {
   color: var(--color-primary);
   font-weight: 700;
@@ -47,30 +55,20 @@ html {
   font-weight: 400;
   line-height: 1.4;
   color: var(--color-grey-dark);
-  background-image: linear-gradient(to right, var(--color-secondary), var(--color-tertiary));
+  background-image: linear-gradient(
+    to right, var(--color-secondary), var(--color-tertiary)
+  );
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr .5fr;
   max-width: 128rem;
-  min-height: 90rem;
   margin: 0 auto;
 }
 
-.section-wrapper {
-  padding: 10rem 5rem;
-}
-
-.section {
-  margin-top: 8rem;
-}
-
-.content {
-  margin-top: 3rem;
-}
-
 .main {
+  padding: 10rem 5rem;
   background-color: var(--color-secondary);
 }
 
@@ -92,6 +90,16 @@ html {
       color: var(--color-primary);
       margin-right: 2rem;
     }
+  }
+}
+
+.resources {
+  display: grid;
+  gap: .5rem;
+
+  .resources__resource {
+    text-decoration: none;
+    color: var(--color-grey-lightest);
   }
 }
 
@@ -133,69 +141,28 @@ html {
     width: 1.8rem;
     height: 1.8rem;
   }
-
-  .contact__resources {
-    display: grid;
-    align-items: center;
-    gap: .5rem;
-  }
-
-  .contact__resource {
-    text-decoration: none;
-    color: var(--color-grey-lightest);
-  }
-}
-
-.profile {
-  .profile__title {
-  }
-
-  .profile__content {
-  }
 }
 
 .experience {
-  .experience__title {
-  }
-
   .experience__projects-wrapper {
     display: grid;
     gap: 2rem;
   }
 
-  .experience__project {
-    .experience__project__title {
-      .experience__project__link {
-        text-decoration: none;
-        color: inherit;
-      }
-    }
-
-    .experience__project__description {
-      margin-top: 1rem;
-    }
-
-    .experience__project__preview {
-      margin-top: 3rem;
-      height: 30rem;
-      border-radius: .6rem;
-      box-shadow: 0 0 2rem rgba(0, 0, 0, .3);
-    }
-  }
-}
-
-.certificates {
-  .certificates__title {
+  .experience__project__link {
+    text-decoration: none;
+    color: inherit;
   }
 
-  .certificates__resources {
-    display: grid;
-    gap: .5rem;
+  .experience__project__description {
+    margin-top: 1rem;
+  }
 
-    .certificates__resource {
-      text-decoration: none;
-      color: var(--color-grey-light);
-    }
+  .experience__project__preview {
+    margin-top: 3rem;
+    height: 30rem;
+    border-radius: .6rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .3);
   }
 }
 
@@ -290,16 +257,11 @@ html {
 .education {
   margin-top: 12rem;
 
-  .education__university {
-    .education__university__year {
-      color: var(--color-grey-lightest)
-    }
+  .education__university__year {
+    color: var(--color-grey-lightest)
+  }
 
-    .education__university__degree-major {
-      font-weight: 300;
-    }
-
-    .education__university__name {
-    }
+  .education__university__degree-major {
+    font-weight: 300;
   }
 }
