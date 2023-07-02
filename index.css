@@ -74,6 +74,10 @@ html {
 .aside {
   padding: 10rem 3rem;
   background-color: var(--color-tertiary);
+
+  .aside__info-wrapper {
+    margin-left: 2rem;
+  }
 }
 
 .list {
