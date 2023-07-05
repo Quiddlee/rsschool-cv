@@ -14,6 +14,14 @@
   --color-grey-dark: #363636;
   --color-grey-lightest: #707070;
 
+  --color-grey-shadow: #0000004d;
+
+  /*///////////////////*/
+  /*// Responsive breakpoints*/
+  /*$bp-largest: 75em; // 1200px*/
+  /*$bp-large: 62.5em; // 1000px*/
+  /*$bp-medium: 50em; // 800px*/
+  /*$bp-small: 37.5em; // 600*/
 }
 
 *,
@@ -27,25 +35,6 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  /*@media only screen and (max-width: $bp-largest) {*/
-  /*}*/
-}
-
-.mt-3 {
-  margin-top: 3rem;
-}
-
-.mt-8 {
-  margin-top: 8rem;
-}
-
-.title {
-  color: var(--color-primary);
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 3.5rem;
-  line-height: 3rem;
-  letter-spacing: .5rem;
 }
 
 .body {
@@ -57,18 +46,59 @@ html {
   background-image: linear-gradient(
     to right, var(--color-secondary), var(--color-tertiary)
   );
+
+  @media only screen and (max-width: 62.5em) {
+    font-size: 1.4rem;
+  }
+}
+
+.mt-3 {
+  margin-top: 3rem;
+
+  @media only screen and (max-width: 62.5em) {
+    margin-top: 1.5rem;
+  }
+}
+
+.mt-8 {
+  margin-top: 8rem;
+
+  @media only screen and (max-width: 62.5em) {
+    margin-top: 6rem;
+  }
+}
+
+.title {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  letter-spacing: .5rem;
+
+  @media only screen and (max-width: 62.5em) {
+    font-size: 2.5rem;
+  }
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr .5fr;
+  grid-template-columns: 1fr minmax(max-content, .5fr);
   max-width: 128rem;
   margin: 0 auto;
+
+  @media only screen and (max-width: 75em) {
+    grid-template-columns: 1fr .3fr;
+  }
 }
 
 .main {
   padding: 10rem 5rem;
   background-color: var(--color-secondary);
+
+  @media only screen and (max-width: 50em) {
+    padding: 7rem 3rem;
+  }
 }
 
 .aside {
@@ -112,12 +142,27 @@ html {
     font-size: 5.5rem;
     text-transform: uppercase;
     line-height: 5.3rem;
+    max-width: 70rem;
+
+    @media only screen and (max-width: 75em) {
+      font-size: 5rem;
+    }
+
+    @media only screen and (max-width: 62.5em) {
+      font-size: 3.5rem;
+      max-width: 50rem;
+      line-height: 4rem;
+    }
   }
 
   .header__sub-heading {
     letter-spacing: .7rem;
     font-size: 3.5rem;
     font-weight: 400;
+
+    @media only screen and (max-width: 75em) {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -126,6 +171,10 @@ html {
   display: flex;
   align-items: center;
   gap: 2.5rem;
+
+  @media only screen and (max-width: 62.5em) {
+    padding-top: 8rem;
+  }
 
   .contact__icons {
     padding: .5rem 0;
@@ -138,6 +187,11 @@ html {
 
     min-width: 3.7rem;
     min-height: 11.5rem;
+
+    @media only screen and (max-width: 62.5em) {
+      min-width: 3.3rem;
+      min-height: 10rem;
+    }
   }
 
   .contact__icon {
@@ -163,9 +217,13 @@ html {
 
   .experience__project__preview {
     margin-top: 3rem;
-    height: 30rem;
+    max-height: 30rem;
     border-radius: .6rem;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, .3);
+    box-shadow: 0 0 2rem var(--color-grey-shadow);
+
+    @media only screen and (max-width: 75em) {
+      max-width: 40rem;
+    }
   }
 }
 
@@ -182,6 +240,11 @@ html {
   border-radius: 100rem;
   border: .5rem solid var(--color-secondary);
 
+  @media only screen and (max-width: 62.5em) {
+    width: 20rem;
+    height: 20rem;
+  }
+
   &:before {
     content: '';
 
@@ -190,10 +253,17 @@ html {
     bottom: 3rem;
     left: 2rem;
 
-    width: 3rem;
-    height: 3rem;
+    width: 10%;
+    height: 10%;
+
     border-radius: 100rem;
     background-color: var(--color-primary);
+  }
+
+  @media only screen and (max-width: 62.5em) {
+    &:before {
+      bottom: 1rem;
+    }
   }
 
   &:after {
@@ -211,6 +281,14 @@ html {
     background-color: var(--color-primary);
   }
 
+  @media only screen and (max-width: 62.5em) {
+    &:after {
+      width: .5rem;
+      right: -.45rem;
+      bottom: 49%;
+    }
+  }
+
   .image__semicircle {
     position: absolute;
     left: -.2rem;
@@ -219,11 +297,16 @@ html {
     width: inherit;
     height: inherit;
 
-    filter: url('#goo');
     border: 1rem solid var(--color-primary);
     border-radius: 100rem;
 
     clip-path: circle(50% at 100% 0);
+
+    @media only screen and (max-width: 62.5em) {
+      border: .5rem solid var(--color-primary);
+      left: -.5rem;
+      bottom: -.5rem;
+    }
   }
 
   .image__rounder {
@@ -236,6 +319,13 @@ html {
     height: .9rem;
 
     background-color: var(--color-primary);
+
+    @media only screen and (max-width: 62.5em) {
+      width: .5rem;
+      height: .5rem;
+      top: -.5rem;
+      right: 49%;
+    }
   }
 
   .image__frame {
