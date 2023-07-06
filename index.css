@@ -90,6 +90,10 @@ html {
   @media only screen and (max-width: 75em) {
     grid-template-columns: 1fr .3fr;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .main {
@@ -104,6 +108,10 @@ html {
 .aside {
   padding: 10rem 3rem;
   background-color: var(--color-tertiary);
+
+  @media only screen and (max-width: 62.5em) {
+    padding: 10rem 3rem 0 1rem;
+  }
 
   .aside__info-wrapper {
     margin-left: 2rem;
@@ -145,13 +153,14 @@ html {
     max-width: 70rem;
 
     @media only screen and (max-width: 75em) {
-      font-size: 5rem;
+      font-size: 4.1rem;
+      max-width: 50rem;
     }
 
-    @media only screen and (max-width: 62.5em) {
-      font-size: 3.5rem;
-      max-width: 50rem;
-      line-height: 4rem;
+    @media only screen and (max-width: 50em) {
+      font-size: 2.3rem;
+      max-width: 30rem;
+      line-height: 3rem;
     }
   }
 
@@ -162,6 +171,11 @@ html {
 
     @media only screen and (max-width: 75em) {
       font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 50em) {
+      font-size: 1.5rem;
+      letter-spacing: .3rem;
     }
   }
 }
@@ -195,8 +209,8 @@ html {
   }
 
   .contact__icon {
-    width: 1.8rem;
-    height: 1.8rem;
+    max-width: 1.8rem;
+    max-height: 1.8rem;
   }
 }
 
@@ -217,13 +231,13 @@ html {
 
   .experience__project__preview {
     margin-top: 3rem;
-    max-height: 30rem;
+    width: 100%;
     border-radius: .6rem;
     box-shadow: 0 0 2rem var(--color-grey-shadow);
+  }
 
-    @media only screen and (max-width: 75em) {
-      max-width: 40rem;
-    }
+  .minesweeper-image {
+    width: 50%;
   }
 }
 
@@ -334,7 +348,7 @@ html {
     align-items: end;
 
     width: 80%;
-    height: 80%;
+    /*height: 80%;*/
 
     background-color: var(--color-primary);
     border-radius: 100rem;
