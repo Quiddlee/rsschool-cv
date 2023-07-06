@@ -83,8 +83,10 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr minmax(max-content, .5fr);
+  grid-template-columns: 1fr .5fr;
+
   max-width: 128rem;
+  padding: 10rem 5rem;
   margin: 0 auto;
 
   @media only screen and (max-width: 75em) {
@@ -112,10 +114,12 @@ html {
   @media only screen and (max-width: 62.5em) {
     padding: 10rem 3rem 0 1rem;
   }
+}
 
-  .aside__info-wrapper {
-    margin-left: 2rem;
-  }
+.aside__info-wrapper {
+  margin-left: 2rem;
+  grid-column: 2 / 3;
+  grid-row: 3 / 6;
 }
 
 .list {
@@ -145,6 +149,8 @@ html {
 }
 
 .header {
+  align-self: center;
+
   .header__heading,
   .header__surname {
     font-size: 5.5rem;
@@ -214,7 +220,13 @@ html {
   }
 }
 
+.profile {
+  grid-column: 1 / 2;
+}
+
 .experience {
+  grid-column: 1 / 2;
+
   .experience__projects-wrapper {
     display: grid;
     gap: 2rem;
@@ -241,8 +253,14 @@ html {
   }
 }
 
+.certificates {
+  grid-column: 1 / 2;
+}
+
 .image {
   position: relative;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
 
   display: flex;
   justify-content: center;
@@ -348,7 +366,7 @@ html {
     align-items: end;
 
     width: 80%;
-    /*height: 80%;*/
+    height: 80%;
 
     background-color: var(--color-primary);
     border-radius: 100rem;
