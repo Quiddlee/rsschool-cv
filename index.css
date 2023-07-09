@@ -36,6 +36,7 @@ html {
   font-weight: 400;
   line-height: 1.4;
   color: var(--color-grey-dark);
+
   background-image: linear-gradient(
     to right, var(--color-secondary) 61%, var(--color-tertiary) 10%
   );
@@ -102,12 +103,16 @@ html {
 
 .container {
   display: grid;
-  grid-template-columns: [main-start] 1fr [main-end aside-start] .5fr [aside-end];
+  grid-template-columns: [main-start] 1fr [main-end aside-start] .6fr [aside-end];
 
   max-width: 128rem;
   padding: 10rem 5rem;
   margin: 0 auto;
   column-gap: 15rem;
+
+  background-image: linear-gradient(
+    to right, var(--color-secondary) 61%, var(--color-tertiary) 10%
+  );
 
   grid-template-areas:
         "header image"
@@ -141,6 +146,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    background-image: unset;
   }
 }
 
