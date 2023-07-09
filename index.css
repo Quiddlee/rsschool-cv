@@ -70,6 +70,10 @@ html {
 .mt-8 {
   margin-top: 8rem;
 
+  @media print {
+    margin-top: 1.3cm;
+  }
+
   @media only screen and (max-width: 62.5em) {
     margin-top: 6rem;
   }
@@ -90,6 +94,10 @@ html {
   font-size: 3.5rem;
   line-height: 3rem;
   letter-spacing: .5rem;
+
+  @media print {
+    font-size: 22.5pt;
+  }
 
   @media only screen and (max-width: 62.5em) {
     font-size: 2.5rem;
@@ -120,6 +128,18 @@ html {
         "profile aside"
         "experience aside"
         "certificates .";
+
+  @media print {
+    padding: 1.5cm 8mm;
+    column-gap: 8mm;
+
+    grid-template-areas:
+        "header image"
+        "contact aside"
+        "profile aside"
+        "experience aside"
+        "certificates .";
+  }
 
   @media only screen and (max-width: 75em) {
     grid-template-columns: [main-start] 1fr [main-end aside-start] .6fr [aside-end];
@@ -217,6 +237,11 @@ html {
     line-height: 5.3rem;
     max-width: 70rem;
 
+    @media print {
+      font-size: 26.25pt;
+      line-height: 8mm;
+    }
+
     @media only screen and (max-width: 75em) {
       font-size: 3.5rem;
       max-width: 50rem;
@@ -240,6 +265,10 @@ html {
     font-size: 3.5rem;
     font-weight: 400;
 
+    @media print {
+      font-size: 11.25pt;
+    }
+
     @media only screen and (max-width: 75em) {
       font-size: 2.5rem;
     }
@@ -258,6 +287,10 @@ html {
   gap: 2.5rem;
 
   grid-area: contact;
+
+  @media print {
+    margin-top: -2cm;
+  }
 
   @media only screen and (max-width: 62.5em) {
     margin-top: 8rem;
@@ -361,6 +394,11 @@ html {
   border-radius: 100rem;
   border: .5rem solid var(--color-secondary);
 
+  @media print {
+    width: 5.3cm;
+    height: 5.3cm;
+  }
+
   @media only screen and (max-width: 62.5em) {
     width: 20rem;
     height: 20rem;
@@ -391,6 +429,12 @@ html {
     }
   }
 
+  @media print {
+    &:before {
+      bottom: 2.5mm;
+    }
+  }
+
   &:after {
     content: '';
 
@@ -414,6 +458,14 @@ html {
     }
   }
 
+  @media print {
+    &:after {
+      width: 1mm;
+      right: -1.2mm;
+      bottom: 49%;
+    }
+  }
+
   .image__semicircle {
     position: absolute;
     left: -.2rem;
@@ -432,6 +484,12 @@ html {
       left: -.5rem;
       bottom: -.5rem;
     }
+
+    @media print {
+      border: 1.3mm solid var(--color-primary);
+      left: -1.3mm;
+      bottom: -1.3mm;
+    }
   }
 
   .image__rounder {
@@ -449,6 +507,13 @@ html {
       width: .5rem;
       height: .5rem;
       top: -.5rem;
+      right: 49%;
+    }
+
+    @media print {
+      width: 1.3mm;
+      height: 1.3mm;
+      top: -1.3mm;
       right: 49%;
     }
   }
