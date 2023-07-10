@@ -7,14 +7,70 @@
 }
 
 :root {
-  --color-primary: #ffcc01;
-  --color-secondary: #f8f8ff;
-  --color-tertiary: #fff;
+  /* light theme */
+  --color-secondary-light: #f8f8ff;
+  --color-tertiary-light: #fff;
+  --color-grey-dark-light: #363636;
+  --color-grey-lightest-light: #707070;
+  --switch-icon-light: '🌞';
 
-  --color-grey-dark: #363636;
-  --color-grey-lightest: #707070;
+  /* dark theme */
+  --color-secondary-dark: #1b1a16;
+  --color-tertiary-dark: #010100;
+  --color-grey-dark-dark: #d0d0d0;
+  --color-grey-lightest-dark: #a2a2a2;
+  --switch-icon-dark: '🌚';
+
+  --color-primary: #ffcc01;
+  --color-secondary: var(--color-secondary-light);
+  --color-tertiary: var(--color-tertiary-light);
+
+  --color-grey-dark: var(--color-grey-dark-light);
+  --color-grey-lightest: var(--color-grey-lightest-light);
+  --switch-icon: var(--switch-icon-light);
 
   --color-grey-shadow: #0000004d;
+}
+
+.theme-switch {
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.theme-switch:checked ~ .app .container,
+.theme-switch:checked ~ .app {
+  --color-secondary: var(--color-secondary-dark);
+  --color-tertiary: var(--color-tertiary-dark);
+
+  --color-grey-dark: var(--color-grey-dark-dark);
+  --color-grey-lightest: var(--color-grey-lightest-dark);
+  --switch-icon: var(--switch-icon-dark);
+}
+
+.switch-label {
+  display: flex;
+  align-items: center;
+
+  padding: .3rem;
+
+  position: absolute;
+  top: 3rem;
+  right: 20rem;
+
+  width: 6rem;
+  height: 3rem;
+
+  cursor: pointer;
+  background-color: var(--color-primary);
+  border-radius: 100rem;
+
+  &:before {
+    content: var(--switch-icon);
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 
 *,
@@ -32,11 +88,13 @@ html {
 
 .body {
   font-family: Google Sans, sans-serif;
-  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.4;
-  color: var(--color-grey-dark);
+}
 
+.app {
+  color: var(--color-grey-dark);
+  font-size: 1.8rem;
   background-image: linear-gradient(
     to right, var(--color-secondary) 61%, var(--color-tertiary) 10%
   );
