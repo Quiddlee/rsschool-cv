@@ -12,14 +12,14 @@
   --color-tertiary-light: #fff;
   --color-grey-dark-light: #363636;
   --color-grey-lightest-light: #707070;
-  --switch-icon-light: '🌞';
+  --switch-icon-light: '🌚';
 
   /* dark theme */
   --color-secondary-dark: #1b1a16;
   --color-tertiary-dark: #010100;
   --color-grey-dark-dark: #d0d0d0;
   --color-grey-lightest-dark: #a2a2a2;
-  --switch-icon-dark: '🌚';
+  --switch-icon-dark: '🌞';
 
   --color-primary: #ffcc01;
   --color-secondary: var(--color-secondary-light);
@@ -38,7 +38,6 @@
   width: 0;
 }
 
-.theme-switch:checked ~ .app .container,
 .theme-switch:checked ~ .app {
   --color-secondary: var(--color-secondary-dark);
   --color-tertiary: var(--color-tertiary-dark);
@@ -46,6 +45,10 @@
   --color-grey-dark: var(--color-grey-dark-dark);
   --color-grey-lightest: var(--color-grey-lightest-dark);
   --switch-icon: var(--switch-icon-dark);
+}
+
+.theme-switch:checked ~ .app .switch-label:before {
+  translate: 115%;
 }
 
 .switch-label {
@@ -64,12 +67,26 @@
   cursor: pointer;
   background-color: var(--color-primary);
   border-radius: 100rem;
+  font-size: 2rem;
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.2rem;
+
+    width: 4rem;
+    height: 2rem;
+
+    top: 2rem;
+    right: 2rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    right: unset;
+    left: 2rem;
+  }
 
   &:before {
     content: var(--switch-icon);
-    display: block;
-    width: 2.4rem;
-    height: 2.4rem;
+    transition: .3s;
   }
 }
 
@@ -168,6 +185,7 @@ html {
 }
 
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: [main-start] 1fr [main-end aside-start] .6fr [aside-end];
 
@@ -225,6 +243,7 @@ html {
     align-items: center;
     gap: 4rem;
     background-image: unset;
+    padding-top: 6rem;
   }
 }
 
