@@ -11,6 +11,42 @@
 <body class="body">
 <input class="theme-switch" id="theme-switch" type="checkbox">
 <div class="app">
+
+  <div class="navigation">
+    <input class="navigation__checkbox" id="navi-checkbox" type="checkbox">
+    <label class="navigation__btn" for="navi-checkbox">
+      <span class="burger-label__icon"></span>
+    </label>
+    <div class="navigation__background"></div>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <span class="navigation__num">01</span>
+          <a class="navigation__link" href="#profile">Profile</a>
+        </li>
+        <li class="navigation__item">
+          <span class="navigation__num">02</span>
+          <a class="navigation__link" href="#experience">Experience</a>
+        </li>
+        <li class="navigation__item">
+          <span class="navigation__num">03</span>
+          <a class="navigation__link" href="#education">Education</a>
+        </li>
+        <li class="navigation__item">
+          <span class="navigation__num">04</span>
+          <a class="navigation__link" href="#language">Language</a>
+        </li>
+        <li class="navigation__item">
+          <span class="navigation__num">05</span>
+          <a class="navigation__link" href="#skills">Skills</a>
+        </li>
+        <li class="navigation__item">
+          <span class="navigation__num">06</span>
+          <a class="navigation__link" href="#certificates">Certificates</a>
+      </ul>
+    </nav>
+  </div>
+
   <main class="container">
     <label class="switch-label" for="theme-switch"></label>
 
@@ -43,7 +79,7 @@
       </article>
     </section>
 
-    <section class="profile mt-8">
+    <section class="profile mt-8" id="profile">
       <h2 class="title">profile</h2>
       <p class="mt-3">I enjoy building interactive web applications with aesthetically pleasing
         interfaces,
@@ -51,7 +87,7 @@
       </p>
     </section>
 
-    <section class="experience mt-8">
+    <section class="experience mt-8" id="experience">
       <h2 class="title">experience</h2>
 
       <div class="experience__projects-wrapper">
@@ -82,7 +118,7 @@
       </div>
     </section>
 
-    <footer class="certificates mt-8">
+    <footer class="certificates mt-8" id="certificates">
       <h2 class="title">certificates</h2>
 
       <article class="resources mt-3">
@@ -116,7 +152,7 @@
     </section>
 
     <aside class="aside">
-      <section class="education">
+      <section class="education" id="education">
         <h2 class="title">education</h2>
 
         <article class="education__university mt-3">
@@ -127,7 +163,7 @@
         </article>
       </section>
 
-      <section class="language mt-8">
+      <section class="language mt-8" id="language">
         <h2 class="title">language</h2>
 
         <ul class="list mt-3">
@@ -135,7 +171,7 @@
         </ul>
       </section>
 
-      <section class="skills mt-8">
+      <section class="skills mt-8" id="skills">
         <h2 class="title">skills</h2>
 
         <ul class="list mt-3">
