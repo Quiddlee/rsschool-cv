@@ -69,6 +69,10 @@
   border-radius: 100rem;
   font-size: 2rem;
 
+  @media print {
+    display: none;
+  }
+
   @media only screen and (max-width: 50em) {
     font-size: 1.2rem;
 
