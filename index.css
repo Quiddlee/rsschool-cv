@@ -103,6 +103,28 @@ html {
   }
 }
 
+.link {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
 .title {
   color: var(--color-primary);
   font-weight: 700;
