@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <link href="./index.css" rel="stylesheet">
+  <link href="./img/favicon.png" rel="icon" type="image/x-icon">
+  <script defer src="index.js"></script>
+  <title>CV // Bogdan Scherbina</title>
+</head>
+<body class="body">
+<input class="theme-switch" id="theme-switch" type="checkbox">
+<div class="app">
+
+  <div class="navigation">
+    <input class="navigation__checkbox" id="navi-checkbox" type="checkbox">
+    <label class="navigation__btn" for="navi-checkbox">
+      <span class="burger-label__icon"></span>
+    </label>
+    <div class="navigation__background"></div>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <span class="navigation__num">01</span>
+          <a class="navigation__link" href="#profile">Profile</a>
+        </li>
+        <li class="navigation__item">
+          <span class="navigation__num">02</span>
+          <a class="navigation__link" href="#experience">Experience</a>
+        </li>
+        <li class="navigation__item">
+          <span class="navigation__num">03</span>
+          <a class="navigation__link" href="#education">Education</a>
+        </li>
+        <li class="navigation__item">
+          <span class="navigation__num">04</span>
+          <a class="navigation__link" href="#language">Language</a>
+        </li>
+        <li class="navigation__item">
+          <span class="navigation__num">05</span>
+          <a class="navigation__link" href="#skills">Skills</a>
+        </li>
+        <li class="navigation__item">
+          <span class="navigation__num">06</span>
+          <a class="navigation__link" href="#certificates">Certificates</a>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="container">
+    <label class="switch-label" for="theme-switch"></label>
+
+    <header class="header">
+      <h1 class="header__heading">
+        Bogdan <span class="header__surname title">Scherbina</span>
+        <span class="header__sub-heading">react.js developer</span>
+      </h1>
+    </header>
+
+    <section class="contact">
+      <aside class="contact__icons">
+        <svg class="contact__icon">
+          <use href="./img/icons.svg#phone"></use>
+        </svg>
+
+        <svg class="contact__icon">
+          <use href="./img/icons.svg#mail"></use>
+        </svg>
+
+        <svg class="contact__icon">
+          <use href="./img/icons.svg#telegram"></use>
+        </svg>
+      </aside>
+
+      <article class="resources">
+        <a class="resources__resource " href="tel:0996744615">
+          <span class="link">+38 (099)-674-4615</span>
+        </a>
+        <a class="resources__resource" href="mailto:bogdanscherbinadev@gmail.com" target="_blank">
+          <span class="link">bogdanscherbinadev@gmail.com</span>
+        </a>
+        <a class="resources__resource" href="https://t.me/quiddle" target="_blank">
+          <span class="link">t.me/quiddle</span>
+        </a>
+      </article>
+    </section>
+
+    <section class="profile mt-8" id="profile">
+      <h2 class="title">profile</h2>
+      <p class="mt-3">I enjoy building interactive web applications with aesthetically pleasing
+        interfaces,
+        and with paying extra attention to details such as animations or UX
+      </p>
+    </section>
+
+    <section class="experience mt-8" id="experience">
+      <h2 class="title">experience</h2>
+
+      <div class="experience__projects-wrapper">
+        <article class="experience__project mt-3">
+          <h3 class="experience__project__title">
+            <a class="experience__project__link link" href="https://quiddlee.github.io/CSS-Dinner/">Rolling Scopes
+              School/
+              🍽️ Css Dinner</a>
+          </h3>
+          <p class="experience__project__description">10 Levels to practice your css selecting skills! <br> Exciting
+            game with modern design and super smooth animations!</p>
+          <img alt="Css Dinner the game gameplay preview" class="experience__project__preview"
+               src="./img/css-dinner-preview.png"
+          >
+        </article>
+
+        <article class="experience__project mt-3">
+          <h3 class="experience__project__title">
+            <a class="experience__project__link link" href="https://quiddlee.github.io/Minesweeper">Rolling Scopes
+              School/
+              💥Minesweeper</a>
+          </h3>
+          <p class="experience__project__description">A modern remake of a classic Minesweeper game! <br> Beautiful
+            design,
+            animations and nice gameplay!</p>
+          <img alt="Minesweeper the game gameplay preview" class="experience__project__preview minesweeper-image"
+               src="./img/minesweeper-preview.gif"
+          >
+        </article>
+
+        <article class="experience__project mt-3">
+          <h3 class="experience__project__title">
+            <a class="experience__project__link link" href="https://quiddlee.github.io/Forkify">JavaScript Course
+              Project/
+              🍕 Forkify </a>
+          </h3>
+          <p class="experience__project__description">A Recipe Finding Web Application! <br> Beautiful application where
+            you can find ANY recipe you want or even ADD your own one!</p>
+          <img alt="Forkify application preview" class="experience__project__preview"
+               src="./img/forkify-preview.jpg"
+          >
+        </article>
+      </div>
+    </section>
+
+    <footer class="certificates mt-8" id="certificates">
+      <h2 class="title">certificates</h2>
+
+      <article class="resources mt-3">
+        <a class="resources__resource"
+           href="https://www.udemy.com/certificate/UC-d57ac978-ac7f-4d7a-9467-f61cf31d4fe0/">
+          <span class="link">The Complete JavaScript Course 2023: From Zero to Expert!</span>
+        </a>
+        <a class="resources__resource"
+           href="https://www.udemy.com/certificate/UC-38671e3c-a60b-4a6b-b340-15f707d10cb7/">
+          <span class="link">Understanding TypeScript</span>
+        </a>
+        <a class="resources__resource"
+           href="https://www.udemy.com/certificate/UC-63323c8e-e298-4b0e-aca5-31f8bbd21ee0/">
+          <span class="link">Modern TypeScript Complete course</span>
+        </a>
+        <a class="resources__resource"
+           href="https://www.udemy.com/certificate/UC-972d9b88-32b5-414f-8782-4ad0197103e6/">
+          <span class="link">Advanced JavaScript</span>
+        </a>
+        <a class="resources__resource"
+           href="https://www.udemy.com/certificate/UC-9051b2f9-c30a-4d38-b0d4-b860e7abe014/">
+          <span class="link">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</span>
+        </a>
+        <a class="resources__resource"
+           href="https://www.udemy.com/certificate/UC-df2abf76-de53-43b0-a630-46e8b1402a7b/">
+          <span class="link">HTML/CSS Technologies</span>
+        </a>
+        <a class="resources__resource" href="https://www.efset.org/cert/2JhWMH">
+          <span class="link">The EF Standard English Test (EF SET)</span>
+        </a>
+      </article>
+    </footer>
+
+    <section class="image">
+      <div class="image__semicircle"></div>
+      <div class="image__rounder"></div>
+      <div class="image__frame">
+        <img alt="CV photo" class="image__photo" src="./img/cv.png">
+      </div>
+    </section>
+
+    <aside class="aside">
+      <section class="education" id="education">
+        <h2 class="title">education</h2>
+
+        <article class="education__university mt-3">
+          <span class="education__university__year">2022 - Present</span>
+          <h3 class="education__university__degree-major">Bachelor's degree <br> Information systems and technologies
+          </h3>
+          <p class="education__university__name">Donbass State Engineering Academy</p>
+        </article>
+      </section>
+
+      <section class="language mt-8" id="language">
+        <h2 class="title">language</h2>
+
+        <ul class="list mt-3">
+          <li class="list__item">English</li>
+        </ul>
+      </section>
+
+      <section class="skills mt-8" id="skills">
+        <h2 class="title">skills</h2>
+
+        <ul class="list mt-3">
+          <li class="list__item">React</li>
+          <li class="list__item">TypeScript</li>
+          <li class="list__item">JavaScript</li>
+          <li class="list__item">Css</li>
+          <li class="list__item">HTML</li>
+          <li class="list__item">Git/GitHub</li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+</div>
+</body>
+</html>
