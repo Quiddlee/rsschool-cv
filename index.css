@@ -189,7 +189,7 @@ html {
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  scale: 60;
+  scale: 90;
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
