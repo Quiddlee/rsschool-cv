@@ -664,7 +664,7 @@ html {
     position: absolute;
     border-radius: 10rem;
 
-    right: -.8rem;
+    right: -2.8%;
     bottom: 49.5%;
 
     width: 1rem;
@@ -676,8 +676,20 @@ html {
   @media only screen and (max-width: 62.5em) {
     &:after {
       width: .5rem;
-      right: -.5rem;
+      right: -2.35%;
       bottom: 49%;
+    }
+  }
+
+  @media only screen and (max-width: 50em) {
+    &:after {
+      right: -2.5%;
+    }
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    &:after {
+      right: -2.6%;
     }
   }
 
@@ -729,7 +741,7 @@ html {
     @media only screen and (max-width: 62.5em) {
       width: .5rem;
       height: .5rem;
-      top: -.45rem;
+      top: -2.5%;
       right: 49%;
     }
 
@@ -740,7 +752,7 @@ html {
     @media print {
       width: 1.3mm;
       height: 1.3mm;
-      top: -1.3mm;
+      top: -1.37mm;
       right: 49%;
     }
   }
