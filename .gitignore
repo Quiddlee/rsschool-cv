@@ -7,14 +7,14 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Directories
+.vscode/*
+.idea
 logs
 node_modules
 dist
 dist-ssr
 
 # Files
-.vscode/*
-.idea
 *.local
 !.vscode/extensions.json
 .DS_Store
