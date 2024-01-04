@@ -95,6 +95,10 @@ html {
   }
 }
 
+.link--secondary {
+  color: var(--color-grey-dark);
+}
+
 .link {
   position: relative;
 
