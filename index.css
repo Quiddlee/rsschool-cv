@@ -101,6 +101,7 @@ html {
 
 .link {
   position: relative;
+  text-decoration: underline;
 
   &:after {
     content: '';
@@ -593,7 +594,6 @@ html {
   }
 
   .experience__project__link {
-    text-decoration: none;
     color: inherit;
   }
 
