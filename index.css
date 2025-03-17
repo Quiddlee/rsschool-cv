@@ -42,6 +42,7 @@ html {
   font-family: Google Sans, sans-serif;
   font-weight: 400;
   line-height: 1.4;
+  background-color: var(--color-secondary);
 }
 
 .app {
@@ -162,7 +163,8 @@ html {
 }
 
 .theme-switch:checked ~ .app .switch-label:before {
-  translate: calc(var(--theme-switch-width) - 20px - 6px);
+  /* 2rem - switch width; .6rem - padding left + right*/
+  translate: calc(var(--theme-switch-width) - 2rem - .6rem);
 }
 
 .switch-label {
