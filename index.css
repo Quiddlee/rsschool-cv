@@ -20,6 +20,8 @@
   --switch-icon: var(--switch-icon-light);
 
   --color-grey-shadow: #0000004d;
+
+  --theme-switch-width: 6rem;
 }
 
 *,
@@ -160,7 +162,7 @@ html {
 }
 
 .theme-switch:checked ~ .app .switch-label:before {
-  translate: 100%;
+  translate: calc(var(--theme-switch-width) - 20px - 6px);
 }
 
 .switch-label {
@@ -173,7 +175,7 @@ html {
   top: 3rem;
   right: 5rem;
 
-  width: 6rem;
+  width: var(--theme-switch-width);
   height: 3rem;
 
   cursor: pointer;
